@@ -1,0 +1,490 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\VipClient.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\VipClient.ico"
+IDI_ICON_CD             ICON                    "res\\FileManage\\cd.ico"
+IDI_ICON_DIR            ICON                    "res\\FileManage\\dir.ico"
+IDI_ICON_DISK           ICON                    "res\\FileManage\\disk.ico"
+IDI_ICON_EXE            ICON                    "res\\FileManage\\exe.ico"
+IDI_ICON_FLOPPY         ICON                    "res\\FileManage\\floppy.ico"
+IDI_ICON_NOTHING        ICON                    "res\\FileManage\\nothing.ico"
+IDI_ICON2               ICON                    "res\\FileManage\\Server.ico"
+IDI_ICON3               ICON                    "res\\FileManage\\Cap.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 VipClient"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "VipClient 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2006",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_VIPCLIENT_DIALOG DIALOGEX 0, 0, 440, 201
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "VipShellClient内部版By_追风箭"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,383,7,50,14
+    PUSHBUTTON      "取消",IDCANCEL,383,27,50,14
+    CONTROL         "List1",IDC_LIST_SERVER,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,60,426,134
+    PUSHBUTTON      "GetScreen",IDC_BUTTON_GETSCREEN,7,7,50,14
+    PUSHBUTTON      "GetShell",IDC_BUTTON_GETSHELL,63,7,50,14
+    PUSHBUTTON      "GetCap",IDC_BUTTON_GETCAP,122,7,50,14
+    PUSHBUTTON      "FileManage",IDC_BUTTON_FILEMANAGE,179,7,50,14
+    PUSHBUTTON      "GetProcessList",IDC_BUTTON_PROCESS_LIST,238,7,65,14
+    PUSHBUTTON      "GetKeyLog",IDC_BUTTON_GET_KEY_LOG,312,7,50,14
+    PUSHBUTTON      "修改注释",ID_VIPSHELL_EXPLAIN,7,35,50,14
+    PUSHBUTTON      "下载文件",ID_VIPSHELL_DOWNFILE,63,34,50,14
+    PUSHBUTTON      "生成文件",ID_VIPSHELL_MAKEFILE,124,33,50,14
+    PUSHBUTTON      "更新IP",IDC_BUTTON_UPDATEIP,182,33,50,14
+END
+
+IDD_DIALOG_GETSHELL DIALOGEX 0, 0, 329, 149
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Shell"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_CMDTEXT,7,7,315,135,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_NOHIDESEL | 
+                    ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_DIALOG_SCREEN DIALOGEX 0, 0, 368, 198
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Screen"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DIALOG_SCREENTOOLS DIALOGEX 0, 0, 377, 25
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "SCREENTOOLS"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "获取单张图片",IDOK,305,6,65,12,NOT WS_TABSTOP
+    LTEXT           "颜色深度:",IDC_STATIC,7,6,40,12
+    COMBOBOX        IDC_COMBO_BITCOUNT,55,6,82,113,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL
+    CONTROL         "连续获取",IDC_CHECK_SCREEN,"Button",BS_AUTOCHECKBOX,154,
+                    6,48,12
+    CONTROL         "控制",IDC_CHECK_INPUT,"Button",BS_AUTOCHECKBOX,225,6,32,
+                    12
+END
+
+IDD_DIALOG_GETCAP DIALOGEX 0, 0, 272, 145
+STYLE DS_SETFONT | DS_3DLOOK | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | 
+    WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_WINDOWEDGE
+CAPTION "cap"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DIALOG_FILEMANAGE DIALOGEX 0, 0, 312, 145
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "FileManage"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "转到",IDOK,245,7,50,12
+    CONTROL         "",IDC_LIST_FILE,"SysListView32",LVS_REPORT | 
+                    LVS_EDITLABELS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,
+                    7,19,233,119
+    COMBOBOX        IDC_COMBO_FILEPATH,7,7,234,191,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_PROCESSLIST DIALOGEX 0, 0, 392, 175
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "刷新",IDC_BUTTON_GET,27,154,50,14
+    PUSHBUTTON      "结束进程",IDC_BUTTON_KILL,119,154,50,14
+    CONTROL         "",IDC_LIST_PROCESS,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,378,143
+END
+
+IDD_DIALOG_KEYLOG DIALOGEX 0, 0, 292, 145
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_KEYLOG,7,7,278,131,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | WS_VSCROLL
+END
+
+IDD_DIALOG_DOWNFILERUN DIALOGEX 0, 0, 308, 49
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "DownFile"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,251,6,50,14
+    EDITTEXT        IDC_EDIT_DOWNDFILERUN,21,6,182,12,ES_AUTOHSCROLL
+    LTEXT           "Url:",IDC_STATIC,6,6,12,8
+END
+
+IDD_DIALOG_INPUTMSG DIALOGEX 0, 0, 201, 49
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,144,28,50,14
+    EDITTEXT        IDC_EDIT_INPUT,7,7,187,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_MAKEFILE DIALOGEX 0, 0, 249, 84
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,192,30,50,14
+    PUSHBUTTON      "取消",IDCANCEL,192,57,50,14
+    LTEXT           "URL地址:",IDC_STATIC,7,7,32,8
+    EDITTEXT        IDC_EDIT_URL,49,7,193,12,ES_AUTOHSCROLL
+    LTEXT           "替换服务:",IDC_STATIC,7,42,36,8
+    EDITTEXT        IDC_EDIT_SERVERNAME,49,39,109,12,ES_AUTOHSCROLL
+    LTEXT           "备注:",IDC_STATIC,7,25,20,8
+    EDITTEXT        IDC_EDIT_EXPLAIN,49,21,109,12,ES_AUTOHSCROLL
+    LTEXT           "配置文件:",IDC_STATIC,7,65,36,8
+    EDITTEXT        IDC_EDIT_CFGFILE,49,60,109,12,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_UPDATEIP DIALOGEX 0, 0, 271, 118
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,214,60,50,14
+    PUSHBUTTON      "取消",IDCANCEL,214,89,50,14
+    LTEXT           "FTP服务器地址:",IDC_STATIC,7,7,56,8
+    EDITTEXT        IDC_EDIT_FTPSERVER,68,7,116,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PORT,224,7,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "端口:",IDC_STATIC,194,7,20,8
+    LTEXT           "刷新IP地址:",IDC_STATIC,7,25,42,8
+    EDITTEXT        IDC_EDIT_PORTMY,224,25,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "端口:",IDC_STATIC,194,25,20,8
+    COMBOBOX        IDC_COMBO_IP,68,25,116,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "FTP文件路径:",IDC_STATIC,7,51,48,8
+    EDITTEXT        IDC_EDIT_FILE,68,46,116,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_USER,68,72,116,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASS,68,94,116,14,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "用户名:",IDC_STATIC,7,72,28,8
+    LTEXT           "密码:",IDC_STATIC,7,98,20,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "FileDescription", "VipClient Microsoft 基础类应用程序"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "VipClient"
+            VALUE "LegalCopyright", "版权所有 (C) 2006"
+            VALUE "OriginalFilename", "VipClient.EXE"
+            VALUE "ProductName", "VipClient 应用程序"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_VIPCLIENT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 433
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_DIALOG_GETSHELL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 322
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 142
+    END
+
+    IDD_DIALOG_SCREEN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 361
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_DIALOG_SCREENTOOLS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 370
+    END
+
+    IDD_DIALOG_GETCAP, DIALOG
+    BEGIN
+        RIGHTMARGIN, 271
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_DIALOG_FILEMANAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 305
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_DIALOG_PROCESSLIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 385
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_DIALOG_KEYLOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 285
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_DIALOG_DOWNFILERUN, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 301
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 42
+    END
+
+    IDD_DIALOG_INPUTMSG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 194
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+
+    IDD_DIALOG_MAKEFILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 242
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 77
+    END
+
+    IDD_DIALOG_UPDATEIP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 264
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_FILEMANAGE MENU 
+BEGIN
+    POPUP "<<FILEMANAGE>>"
+    BEGIN
+        POPUP "运行"
+        BEGIN
+            MENUITEM "正常",                        ID_FILE_SHOW
+            MENUITEM "隐藏",                        ID_FILE_HIDE
+            MENUITEM "本地执行",                    ID_FILE_RUNAT
+        END
+        MENUITEM "改名",                        ID_FILE_MOVE
+        MENUITEM "删除",                        ID_FILE_DEL
+        MENUITEM "下载",                        ID_FILE_DOWN
+    END
+END
+
+IDR_MENU_VIPSHELLDLG MENU 
+BEGIN
+    POPUP "<<VIPSHELLDLG>>"
+    BEGIN
+        POPUP "命令"
+        BEGIN
+            MENUITEM "修改注释",                    ID_VIPSHELL_EXPLAIN
+            MENUITEM "下载文件",                    ID_VIPSHELL_DOWNFILE
+        END
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// SERVER
+//
+
+IDR_SERVER1             SERVER                  "WinStart.bin"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 VipClient(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\VipClient.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
